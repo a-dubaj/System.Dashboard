@@ -212,7 +212,7 @@
 			"name": "System Dashboard Flask",
 			"type": "JSON",
 			"settings": {
-				"url": "http://127.0.0.1:5002",
+				"url": "http://127.0.0.1:8080",
 				"use_thingproxy": false,
 				"refresh": 1,
 				"method": "GET"

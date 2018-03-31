@@ -4,19 +4,17 @@ import os
 import time
 
 import psutil
+
 from flask import Flask
 from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 CORS(app)   # Necessary since API is running locally
-
 # Should match the period (in seconds) in Freeboard
 period = 1
-
 # Disable Flask console messages: http://stackoverflow.com/a/18379764
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR)
-
 
 @cross_origin()
 @app.route('/')
@@ -63,6 +61,6 @@ def index():
     return json.dumps(data)
 
 if __name__ == "__main__":
-    print("System API up at http://localhost:5002")
-    PORT = int(os.getenv('PORT', 5002))
+    print("System API up at http://localhost:8080")
+    PORT = int(os.getenv('PORT', 8080))
     app.run(port=PORT, threaded=True)
