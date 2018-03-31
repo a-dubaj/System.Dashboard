@@ -1,3 +1,8 @@
 # System.Dashboard
 
-![](dashboard.png)
+
+
+### Screenshots
+![](docs/dashboard.png)
+
+### How to use
